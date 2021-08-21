@@ -25,13 +25,13 @@
     font-weight: 100;
 }
 .Weather img {
-    margin-right: 10px;
+    margin-right: 0px;
     position: relative;
     bottom: 15px;
 }
 
 .Weather .row .col-6 #main-temp {
-    font-size: 64px;
+    font-size: 62px;
     font-size: bolder;
     line-height: 64px;
 }

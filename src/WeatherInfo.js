@@ -18,10 +18,13 @@ export default function WeatherInfo(props) {
                        alt={props.data.description}
                        src={props.data.iconUrl}
                      />
-                  <span id="main-temp">{Math.round(props.data.temperature)}</span>
+                
+                     <span id="main-temp">{Math.round(props.data.temperature)}</span>
 
-                 <span id="units">°C | °F</span>
-                </div>
+                     <span id="units">°C | °F</span>
+                      
+                  </div>                
+               
 
                 <div className="col-6">
                     <ul>
