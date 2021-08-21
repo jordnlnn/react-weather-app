@@ -52,9 +52,8 @@ export default function Weather() {
                        alt="main weather icon"
                        src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
                      />
-                  <p>19
-                  <span>°C | °F</span>
-                  </p>
+                  19
+                 °C | °F
                 </div>
 
                 <div className="col-6">
