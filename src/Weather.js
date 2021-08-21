@@ -27,33 +27,42 @@ export default function Weather() {
     return (
         <div className="Weather">
             <form onSubmit={handleSubmit}>
-                <input
+             <div className="row">
+                 <div className="col-9">
+                   <input 
+                    className="form-control"
                     id="input-box"
                     type="search"
                     placeholder="Enter a city..."
+                    autoFocus="on"
                     onChange={updateCity}
-                ></input>
-                <input id="submit-btn" type="submit" value="Search"></input>
+                   ></input>
+                  </div>
+             <div className="col-3">
+                <input className=" w-100" id="submit-btn" type="submit" value="Search"></input>
+             </div>
+                </div>
             </form>
-              <p>{searchResult}</p>
+            <p>{searchResult}</p>
       
       
-             <h1>New York</h1>
+             <h1 id="main-city">New York</h1>
                     <ul>
                       <li>Tuesday 10:00</li>
                       <li>Cloudy</li>
                     </ul>
                
 
-            <div className="row">
+            <div className="row mt-3">
                 <div className="col-6">
                     <img
                        id="main-weather-icon"
                        alt="main weather icon"
                        src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
                      />
-                  19
-                 °C | °F
+                  <span id="main-temp">19</span>
+
+                 <span id="units">°C | °F</span>
                 </div>
 
                 <div className="col-6">

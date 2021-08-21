@@ -1,4 +1,55 @@
 .Weather {
-    text-align: center;
-    margin: 0 auto;
+    margin: 30px auto;
+    border: 4px solid #000000;
+    margin-top: 100px;
+    padding: 20px;
+    font-family: 'Consolas';
+    background: lightgray;
 }
+
+.Weather h1 {
+    font-size: 30px;
+    margin: 20px 0 5px 0;
+    font-weight: 100;
+    line-height: 20px;
+}
+
+.Weather ul {
+    margin: 0;
+    padding: 0;
+}
+.Weather ul li {
+    list-style: none;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 100;
+}
+.Weather img {
+    float: left;
+    margin-right: 10px;
+}
+
+.Weather .row .col-6 #main-temp {
+    font-size: 64px;
+    font-size: bolder;
+    line-height: 64px;
+}
+
+#units {
+    font-size: 16px;
+    position: relative;
+    top: -28px;
+    margin-left: 5px;
+}
+
+#submit-btn {
+background: #545454;
+padding: 5px 10px;
+color: white;
+border: 0px;
+border-radius: 5px;
+}
+#submit-btn:hover {
+background: black;
+}
+
