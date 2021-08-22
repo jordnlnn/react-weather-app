@@ -20,10 +20,12 @@ const codeMapping = {
     "13n": "13d-pixel.png",
     "50d": "50d-pixel.png",
     "50n": "50d-pixel.png"
-
 };
+let icon = codeMapping[props.code];
+console.log(icon);
 
 return (
-    <img src={process.env.PUBLIC_URL + `/icons/{codeMapping[props.code]`} alt="img-desc" />
+    //<Pixelicons code={props.data.icon} alt={props.data.description} />
+    <img src={process.env.PUBLIC_URL + `/${icon}`} alt="img-desc" />
 );
 }

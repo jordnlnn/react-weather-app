@@ -3,6 +3,7 @@ import FormattedDate from "./FormattedDate";
 import UnitConversion from "./UnitConversion";
 import Pixelicons from "./Pixelicons";
 
+
 export default function WeatherInfo(props) {
     return (
 <div className="WeatherInfo">
@@ -16,6 +17,7 @@ export default function WeatherInfo(props) {
             <div className="row mt-3">
                 <div className="col-2 col-md-6">
                    <Pixelicons code={props.data.icon} alt={props.data.description} />
+                
                      </div>    
                   <div className="col-5 col-md-6">
                       <UnitConversion celsius={props.data.temperature} />
