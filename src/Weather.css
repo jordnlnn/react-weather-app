@@ -28,6 +28,7 @@
     margin-right: 0px;
     position: relative;
     bottom: 15px;
+
 }
 
 #main-temp {
@@ -45,7 +46,7 @@
 
 #submit-btn {
 background: #545454;
-padding: 5px 10px;
+padding: 8px 10px;
 color: white;
 border: 0px;
 border-radius: 5px;
@@ -53,4 +54,5 @@ border-radius: 5px;
 #submit-btn:hover {
 background: black;
 }
+
 

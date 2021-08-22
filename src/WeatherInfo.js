@@ -1,6 +1,7 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
 import UnitConversion from "./UnitConversion";
+import Pixelicons from "./Pixelicons";
 
 export default function WeatherInfo(props) {
     return (
@@ -13,22 +14,18 @@ export default function WeatherInfo(props) {
                
 
             <div className="row mt-3">
-                <div className="col-2">
-               
-                    <img
-                       id="main-weather-icon"
-                       alt={props.data.description}
-                       src={props.data.iconUrl}
-                     />
+                <div className="col-2 col-md-6">
+                   <Pixelicons code={props.data.icon} alt={props.data.description} />
                      </div>    
-                  <div className="col-6">
+                  <div className="col-5 col-md-6">
                       <UnitConversion celsius={props.data.temperature} />
                    </div>
                              
                
 
-                <div className="col-4">
+                <div className="col-5 col-md-12" id="humid-wind-desc">
                     <ul>
+                      <li></li>
                       <li>Humidity: {props.data.humidity}</li>
                       <li>Wind: {props.data.wind} km/h</li>
                     </ul>
