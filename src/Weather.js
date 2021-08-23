@@ -35,7 +35,7 @@ function handleCityChange(event) {
 
 if (weatherData.ready) {
     return (
-        <div className="Weather">
+        <div className="Weather container">
             <form onSubmit={handleSubmit}>
              <div className="row">
                  <div className="col-9">
@@ -50,7 +50,7 @@ if (weatherData.ready) {
                    ></input>
                   </div>
              <div className="col-3">
-                <input className=" w-100" id="submit-btn" type="submit" value="Search"></input>
+                <input className=" w-100" id="submit-btn" type="submit" value="SEARCH"></input>
              </div>
                 </div>
             </form>

@@ -3,42 +3,48 @@
     border: 4px solid #000000;
     margin-top: 100px;
     padding: 20px;
-    font-family: "Consolas", "VT323";
+    font-family: "VT323";
     background: lightgray;
 }
-
+.Weather img {
+    margin-right: 0px;
+    position: relative;
+    bottom: 15px;
+}
 .Weather h1 {
-    font-size: 30px;
-    margin: 20px 0 5px 0;
+    font-size: 50px;
+    margin: 30px 0 15px 0;
     font-weight: 100;
     line-height: 20px;
+    text-align: center;
 }
-
+#main-desc {
+    text-align: center;
+}
 .Weather ul {
     margin: 0;
     padding: 0;
 }
 .Weather ul li {
     list-style: none;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 19px;
     font-weight: 100;
 }
-.Weather img {
-    margin-right: 0px;
-    position: relative;
-    bottom: 15px;
-
-}
 
 #main-temp {
-    font-size: 60px;
+    font-size: 64px;
     font-size: bolder;
     line-height: 64px;
-}
+    margin-left: 20px;
 
+}
+img {
+    max-height: 70px;
+    position: relative;
+}
 #units {
-    font-size: 16px;
+    font-size: 18px;
     position: relative;
     top: -28px;
     margin-left: 5px;
@@ -46,7 +52,7 @@
 
 #submit-btn {
 background: #545454;
-padding: 8px 10px;
+padding: 7px 10px;
 color: white;
 border: 0px;
 border-radius: 5px;
@@ -54,5 +60,6 @@ border-radius: 5px;
 #submit-btn:hover {
 background: black;
 }
+
 
 
