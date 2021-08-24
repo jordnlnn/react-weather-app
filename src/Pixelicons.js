@@ -24,6 +24,6 @@ const codeMapping = {
 let icon = codeMapping[props.code];
 
 return (
-    <img src={process.env.PUBLIC_URL + `/${icon}`} alt="img-desc" />
+    <img src={`/${icon}`} alt="img-desc" />
 );
 }

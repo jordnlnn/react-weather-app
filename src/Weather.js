@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import WeatherInfo from "./WeatherInfo";
+import DailyForecast from "./DailyForecast";
 import "./Weather.css";
 
 export default function Weather(props) {
@@ -15,10 +16,10 @@ export default function Weather(props) {
             description: response.data.weather[0].description,
             icon: response.data.weather[0].icon,
             wind: response.data.wind.speed,
-            city: response.data.name
+            city: response.data.name,
+            coordinates: response.data.coord,
         }); 
     }
-
 
 function search() {
     let apiKey = `974867647183f192d10e0478c4341263`;
@@ -56,6 +57,7 @@ if (weatherData.ready) {
             </form>
             
         <WeatherInfo data={weatherData} />
+        <DailyForecast coordinates={weatherData.coordinates} />
 
         </div>
     );

@@ -4,7 +4,7 @@
     margin-top: 100px;
     padding: 20px;
     font-family: "VT323";
-    background: gray;
+    background: rgb(40, 172, 216);
 }
 .Weather img {
     margin-right: 0px;
@@ -57,5 +57,8 @@ border-radius: 5px;
 background: black;
 }
 
-
+.DailyForecast {
+    text-align: center;
+    font-size: 22px;
+}
 
