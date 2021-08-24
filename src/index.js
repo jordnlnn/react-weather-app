@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       
-         <Weather defaultCity="San Diego"/>
+         <Weather defaultCity="Phoenix"/>
          
       <footer>
         coded by jordan goldtooth

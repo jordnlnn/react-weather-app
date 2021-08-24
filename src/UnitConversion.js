@@ -1,40 +1,40 @@
 import React, { useState } from "react";
 
 export default function UnitConversion(props) {
-    const [unit, setUnit] = useState("celsius");
-    function showFahrenheit(event) {
-        event.preventDefault();
-        setUnit("fahrenheit");
-    }
+    const [unit, setUnit] = useState("fahrenheit");
     function showCelsius(event) {
         event.preventDefault();
         setUnit("celsius");
     }
-    if (unit === "celsius") {
+    function showFahrenheit(event) {
+        event.preventDefault();
+        setUnit("fahrenheit");
+    }
+    if (unit === "fahrenheit") {
     return (
         <div className="UnitConversion">
              <span id="main-temp">
-                {Math.round(props.celsius)}
+                {Math.round(props.fahrenheit)}
              </span>
 
              <span id="units">
-                °C | {" "}
-                 <a href="/" onClick={showFahrenheit}>°F</a>
+                °F | {" "}
+                 <a href="/" onClick={showCelsius}>°C</a>
              </span>
         </div>
     );
 } else {
-    let fahrenheit = (props.celsius * 9) /5 + 32;
+    let celsius = (props.fahrenheit - 32) * 5 / 9;
     return (
         <div className="UnitConversion">
             <span id="main-temp">
-                {Math.round(fahrenheit)}
+                {Math.round(celsius)}
             </span>
             <span id="units">
-                <a href="/" onClick={showCelsius}>
-                °C
+                <a href="/" onClick={showFahrenheit}>
+                °F
                 </a>{" "}
-                | °F
+                | °C
             </span>
         </div>
     );

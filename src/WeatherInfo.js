@@ -15,12 +15,12 @@ export default function WeatherInfo(props) {
                
 
             <div className="row mt-3 middle-row">
-                <div className="col-2">
+                <div className="col-2" id="main-weather-icon ">
                    <Pixelicons code={props.data.icon} alt={props.data.description} />
                 </div>    
 
                   <div className="col-5">
-                      <UnitConversion celsius={props.data.temperature} />
+                      <UnitConversion fahrenheit={props.data.temperature} />
                    </div>
                              
                
