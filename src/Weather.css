@@ -3,7 +3,7 @@
     margin-top: 100px;
     padding: 50px;
     font-family: "VT323";
-    background: linear-gradient(90deg,rgb(197, 241, 255), rgb(141, 227, 255), rgb(197, 241, 255));
+    background: linear-gradient(90deg,rgb(141, 227, 255), rgb(197, 241, 255), rgb(141, 227, 255));
     border-radius: 15px;
     box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
 }
