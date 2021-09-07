@@ -21,7 +21,7 @@ let days = [
     }
     return (
         <div>
-            {day} {hours}:{minutes}
+            {day} {hours}:{minutes} Hours
         </div>
 )
 }
